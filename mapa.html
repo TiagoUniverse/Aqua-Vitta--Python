@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mapa" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Página de exibição do mapa com todos os rios cadastrados">
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="apple-touch-icon" href="/assets/icons/58.png">
+  <link rel="stylesheet" href="assets\css\cards.css">
+  <link rel="stylesheet" href="assets\css\navbar.css">
+  <title>Mapa</title>
+
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+  <div class="mapaiframe">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7900.753519187095!2d-34.870533389355366!3d-8.062997710929059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1664775914335!5m2!1spt-BR!2sbr"></iframe>
+  </div>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js', { scope: '/' });
+    }
+  </script>
+
+</body>
+<nav>
+  <div class="navbar">
+    <div class="mapa">
+      <img loading="lazy" src="assets\icons\mapaescuro.svg" width="34" height="31" alt="mapa">
+    </div>
+    <a href="index.html">
+      <div class="cartoes">
+        <img loading="lazy" src="assets\icons\cartõesbranco.svg" width="34" height="31" alt="cartões">
+      </div>
+    </a>
+
+    <a href="usuario.html">
+      <div class="usuario">
+        <img loading="lazy" src="assets\icons\usuariobranco.svg" width="34" height="31" alt="usuario">
+      </div>
+    </a>
+  </div>
+  <div class="escala">
+    <div id="wrap">
+        <img loading="lazy" src="assets\icons\pesquisa.svg" alt="pesquisar" width="65" height="65">
+        <form action="" autocomplete="on">
+            <input id="search" name="search" type="text" placeholder="Rio Capibaribe"><input id="search_submit"
+                value="Rechercher" type="submit">
+        </form>
+        </img>
+    </div>
+</div>
+
+  
+</nav>
+
+</html>

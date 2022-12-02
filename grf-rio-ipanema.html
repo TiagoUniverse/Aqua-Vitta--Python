@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gráficos</title>
+    <link href="assets/css/cards.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' />
+    <link rel="stylesheet" href="assets\css\navbar.css">
+    <link rel="manifest" href="manifest.json">
+
+
+
+
+</head>
+
+<body>
+
+    <div class="titulo-dashboards">
+        <div class="dashboard-img">
+            <img src="assets\img\fotos\Rio Ipanema.webp" alt="Rio Ipanema">
+            <div class="sombra"></div>
+            <div class="nome"><span>Rio Ipanema</span></div>
+            <div class="lugar"><span>Arcoverde</span></div>
+        </div>
+    </div>
+
+
+
+    <div class="grf-container">
+        <div class="grf-box">
+            <h4>Potencial Hidrogênico</h4>
+            <canvas id="ipanema-nivel-ph"></canvas>
+        </div>
+    </div>
+
+    <div class="grf-container">
+        <div class="grf-box">
+            <h4>Oxigênio Dissolvido</h4>
+            <canvas id="ipanema-oxi-dissolvido"></canvas>
+        </div>
+    </div>
+    
+    <div class="grf-container">
+        <div class="grf-box">
+            <h4>Temperatura</h4>
+            <canvas id="ipanema-temperatura"></canvas>
+        </div>
+    </div>
+
+
+    <div class="grf-container">
+        <div class="grf-box">
+            <h4>Condutividade</h4>
+            <canvas id="ipanema-condutividade"></canvas>
+        </div>
+    </div>
+ 
+
+    <div class="grf-container">
+        <div class="grf-box">
+            <h4>Salinidade</h4>
+            <canvas id="ipanema-salinidade"></canvas>
+        </div>
+    </div>
+
+    <div class="grf-container">
+        <div class="grf-box">
+            <h4>Turbidez</h4>
+            <canvas id="ipanema-turbidez"></canvas>
+        </div>
+    </div>
+
+    <div class="espacinho">
+    </div>
+
+
+
+    
+
+    <nav>
+        <div class="navbar">
+            <a href="mapa.html">
+                <div class="mapa">
+                    <img loading="lazy" src="assets\icons\mapabranco.svg" width="34" height="31" alt="mapa">
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="cartoes">
+                    <img src="assets\icons\cartõesbranco.svg" alt="cartões">
+                </div>
+            </a>
+            <a href="usuario.html">
+                <div class="usuario">
+                    <img loading="lazy" src="assets\icons\usuariobranco.svg" width="34" height="31" alt="usuario">
+                </div>
+            </a>
+        </div>
+    </nav>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+<script src="graficos js/grf-ipanema.js"></script>
+
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js', { scope: '/' });
+    }
+</script>
+
+</html>

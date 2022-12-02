@@ -1,0 +1,374 @@
+body {
+    margin: auto;
+}
+
+.cabecalho {
+   padding-bottom: -60px;
+}
+
+.topo {
+    position: relative;
+    bottom: 20vh;
+    margin: auto;
+}
+.logo-menor {
+    vertical-align: top;
+}
+
+.logo-menor img {
+    vertical-align: top;
+    position: relative;
+    top: 0;
+    width: 12vw;
+    height: auto;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+/* Additional demo display styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+    color: #0378A6;
+    background-color: #ffffff;
+}
+
+.card h3 {
+    margin-top: 0rem;
+    font-size: 1.0rem;
+}
+
+.card a {
+    color: #1E3E59;
+}
+
+.card-wrapper {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+    grid-gap: 1rem;
+    max-width: 100vw;
+    width: 120ch;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.pesquisa {
+    position: fixed;
+    width: 64px;
+    bottom: 8%;
+    right: 0.1%;
+}
+
+.espacinho {
+    margin: 10%;
+}
+
+.espacinho-menor {
+    margin-top: 10%;
+}
+
+
+.mapaiframe iframe {
+    width: 100%;
+    height: 96%;
+    position: fixed;
+    top: -1px;
+    left: 0px;
+}
+
+.pagperfil  {
+    top: 10vh;
+    left: 30vw;
+}
+
+.pagperfil .fotoperfil img {
+    border-radius: 5%;
+    width: 23vw;
+    height: auto;
+    background-color: #0367a6;
+    outline-style: solid;
+    outline-width: 0.5vh;
+    outline-color: #1E3E59;
+    outline-offset: 0.5vh;
+}
+
+.dadosperfil a {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+    font-size: 2.1vh;
+    margin-left: 10vw;
+}
+
+.dadosperfil input {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+    font-size: 2.5vh;
+    font-weight: 100;
+    width: 80vw;
+    height: 4vh;
+    margin-bottom: 2vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border: 10vh;
+    border-radius: 0.5vh;
+    background: none;
+    background-color: #ffffff;
+    color: #000000;
+    float: left;
+    padding: 10px;
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+}
+
+.botoesperfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+    min-height: 60px;
+    width: 50vw;
+    margin-bottom: 2vh;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    background-color: #0378A6;
+    border-radius: 2vh;
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+
+}
+
+
+
+.botoAlterarSenha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+    min-height: 60px;
+    width: 50vw;
+    margin-bottom: 2vh;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    background-color:rgba(255, 0, 0, 0.815);
+    border-radius: 2vh;
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+
+}
+
+
+/* Dashboards */
+.sombra {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    top: -30.7vh;
+    box-shadow: 0px -80px 20px 0px rgba(0, 0, 0, 0.5) inset;
+}
+
+.dashboard-img {
+    position: relative
+}
+.dashboard-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    aspect-ratio: 16/9;
+}
+
+.nome span{
+    position: relative;
+    top: -39vh;
+    left: 2%;
+    font-family: play;
+    font-size: 3vh;
+    font-style: bold;
+    font-weight: 500;
+    color: #ffffff;
+    outline-offset: 1px;
+}
+
+.lugar span{
+    position: relative;
+    top: -40vh;
+    left: 2%;
+    font-family: play;
+    font-size: 2.5vh;
+    font-style: bold;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.titulo-dashboards {
+    text-align: left;
+    position: relative;
+    top: -10%;
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*Adicionar*/
+
+
+.fotorio {
+    border: 10vh;
+    border-radius: 5%;
+    width: 15vw;
+    height: auto;
+    background-color: #0367a6;
+    outline-style: solid;
+    outline-width: 0.5vh;
+    outline-color: #1E3E59;
+    outline-offset: 0.5vh;
+    justify-content:center; 
+    display: flex;
+}
+
+.fotorio p {
+    color: #000000;
+    padding-left: 10%;
+    margin-left: 5%;
+    font-size: 4vw;
+    font-family: Play, Geneva, Tahoma, sans-serif;
+    
+}
+
+.input-add {
+    border-radius: 15px;
+    width: 105%;
+    height: 35px;
+    border-color: #0378a6;
+    border-width: 1.5px;
+    margin-bottom: 7%;
+}
+
+.col-12 p {
+    font-family: Play, Geneva, Tahoma, sans-serif;
+}
+
+.fundo-imagem {
+    padding-left: 18%;
+    padding-top: 25%;
+}
+
+.fundo-imagem p {
+    padding-left: 10%;
+    font-family: Play;
+    font-size: 15px;
+    color: black;
+    padding-bottom: 5%;
+}
+
+.botao-salvar {
+    height: 50px;
+    width: 100%;
+    background-color: #0378A6;
+    border: none;
+    border-radius: 15px;
+}
+
+.botao-salvar p {
+    color: #ffffff;
+    font-family: 'Hind Colombo';
+    font-size: 18px;
+}
+
+.grf-box {
+    width: 100%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 3vw;
+    box-shadow: 0.7vw 0.5vh 1vh 0.1vh rgba(0, 0, 0, 0.45);
+    background-color: #ffffff;
+}
+
+.grf-box h4 {
+    font-family: 'Play';
+    font-style: normal;
+    color: #1E3E59;
+    font-weight: 700;
+    text-align: center;
+}
+
+.grf-container {
+    width: 100vw;
+    height: 25vh;
+    min-height: 230px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
+.grf-box:first-child{
+    margin-top: 6vh;
+}
+
+
+.ajudaparagrafo h1 {
+    font-family: Play, Geneva, Tahoma, sans-serif;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.descricaoparagrafo p{
+    font-family: Play, Geneva, Tahoma, sans-serif;
+    font-size: 1.2vw;
+}
+
+
+@media screen and (max-width: 768px){
+    /* .botoesperfil{
+        background-color: red;
+    } */
+
+    .pagperfil .fotoperfil img {
+        width: 40vw;
+    }
+
+    .logo-menor img {
+        width: 40vw;
+        height: auto;
+    }
+
+    .fotorio{
+        width: 40vw;
+    }
+
+    .botoesperfil{
+        min-height: 47px;   
+    }
+
+    .ajudaparagrafo h1{
+        font-size: 9vw;
+    }
+
+    .descricaoparagrafo p{
+        font-size: 5vw;
+    }
+}
+
+

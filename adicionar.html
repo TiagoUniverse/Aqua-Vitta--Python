@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+  <meta name="description" content="Página para fazer o cadastro de um novo rio.">
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="apple-touch-icon" href="/assets/icons/58.png">
+  <title>Pagina dos rios</title>
+  <link href="assets/css/cards.css" rel="stylesheet">
+  <!--Boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+  <!--Css-->
+  <link rel="stylesheet" href="assets\css\navbar.css">
+
+  <link rel="manifest" href="manifest.json">
+
+</head>
+
+
+<body>
+  <header>
+  </header>
+
+
+  <div class="logo-menor">
+    <img loading="lazy" src="assets\img\logo.webp" width="100" height="100" alt="Logo AquaVita">
+  </div>
+
+  <img class="fotorio" loading="lazy" src="assets\img\inserir-img.jpeg" width="385" height="381" alt="Foto do perfil">
+  <br>
+  <h5> Insira a sua foto</h5>
+  <br>
+
+  <form action="https://aquavitta1.pythonanywhere.com/envio" method="POST">
+
+    <div class="dadosperfil">
+      <div>
+        <a>Nome do rio: </a>
+        <input class="input-add" type="name" name="rio" id="nome">
+      </div>
+      <div>
+        <a>Endereço:</a>
+        <input class="input-add" type="adress" name="rio" id="endereco">
+      </div>
+      <Div>
+        <a>Latitude:</a>
+        <input class="input-add" type="latitude" name="rio" id="latitude">
+      </Div>
+      <div>
+        <a>Longitude:</a>
+        <input class="input-add" type="longitude" name="rio" id="longitude">
+      </div>
+      <div>
+        <a>Potencial Hidrogenico:</a>
+        <input class="input-add" type="latitude" name="rio" id="potencialHidrogenico">
+      </div>
+      <Div>
+        <a>Oxigenio Dissolvido:</a>
+        <input class="input-add" type="latitude" name="rio" id="oxigenioDissolvido">
+      </Div>
+      <div>
+        <a>Temperatura:</a>
+        <input class="input-add" type="latitude" name="rio" id="temperatura">
+      </div>
+      <div>
+        <a>Condutividade:</a>
+        <input class="input-add" type="latitude" name="rio" id="condutividade">
+      </div>
+      <Div>
+        <a>Salinidade:</a>
+        <input class="input-add" type="latitude" name="rio" id="salinidade">
+      </Div>
+      <div>
+        <a>Turbidez:</a>
+        <input class="input-add" type="latitude" name="rio" id="turbidez">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary botoesperfil">Salvar</button>
+  </form>
+  <br>
+
+
+  <nav>
+    <div class="navbar">
+      <div class="mapa">
+        <a href="mapa.html">
+          <img loading="lazy" src="assets\img\svg\mapicon.svg" width="58" height="58" alt="botão do mapa">
+        </a>
+      </div>
+      <div class="cancelar">
+        <a href="index.html">
+          <img loading="lazy" src="assets\img\svg\addicon.svg" width="58" height="58" alt="botão de adicionar"></a></a>
+      </div>
+      <div class="usuario">
+        <a href="usuario.html">
+          <img loading="lazy" src="assets\img\svg\usericon.svg" width="58" height="58" alt="botão do usuário">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <nav>
+    <div class="navbar">
+      <a href="mapa.html">
+        <div class="mapa">
+          <img loading="lazy" src="assets\icons\mapabranco.svg" width="34" height="31" alt="mapa">
+        </div>
+      </a>
+      <div class="cartoes">
+        <img loading="lazy" src="assets\icons\cartõesescuro.svg" width="34" height="31" alt="cartões">
+      </div>
+      <a href="usuario.html">
+        <div class="usuario">
+          <img loading="lazy" src="assets\icons\usuariobranco.svg" width="34" height="31" alt="usuario">
+        </div>
+      </a>
+    </div>
+  </nav>
+
+  <div class="espacinho"></div>
+
+  <!--Bootstrap JavaScript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js', { scope: '/' });
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    function salvarRio() {
+      var nome = $("#nome").val();
+      var endereco = $("#endereco").val();
+      var latitude = $("#latitude").val();
+      var longitude = $("#longitude").val();
+      var potencialHidrogenico = $("#potencialHidrogenico").val();
+      var oxigenioDissolvido = $("#oxigenioDissolvido").val();
+      var temperatura = $("#temperatura").val();
+      var condutividade = $("#condutividade").val();
+      var salinidade = $("#salinidade").val();
+      var turbidez = $("#turbidez").val();
+
+      $.ajax({
+        method: "POST",
+        url: "/rio/cadastrarRio",
+        data: JSON.stringify({
+          nome: nome, endereco: endereco, latitude: latitude,
+          longitude: longitude, potencialHidrogenico: potencialHidrogenico,
+          oxigenioDissolvido: oxigenioDissolvido, temperatura: temperatura,
+          condutividade: condutividade, salinidade: salinidade, turbidez: turbidez
+        }),
+        contentType: "application/json; charset=utf-8",
+        success: function (response) {
+          alert("Rio adicionado com sucesso!");
+        }
+      }).fail(function (xhr, status, errorThrown) {
+        alert("Erro ao adicionar rio: " + xhr.responseText);
+      });
+    }
+  </script>
+</body>
+
+</html>

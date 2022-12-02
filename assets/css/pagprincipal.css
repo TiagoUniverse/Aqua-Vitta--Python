@@ -1,0 +1,66 @@
+.body {
+    height: 100%;
+    width: 100%;
+}
+
+.logo .principal {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.logo .principal img{
+    width: 30vw;
+    max-width: 300px;
+    width: 100%; 
+    height: auto; 
+    max-height: 200px; 
+    max-width: 200px;
+}
+
+.cardimagem {
+    text-align: center;
+}
+
+.cardimagem img{
+    width: 45vw;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-top-left-radius: 3vw;
+    border-top-right-radius: 3vw;
+}
+.cardimagem b {
+    font-family: play;
+    font-size: 2vh;
+    color: #0367a6;
+}
+.cardimagem p {
+    font-family: play;
+    font-size: 2vh;
+    margin-top: 0.1vh;
+    color: #0367a6;
+}
+
+
+
+.card {
+    margin-top: 2vh;
+    float:left;
+    width: 45vw;
+    height: auto;
+    border-radius: 3vw;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 0.7vw 0.5vh 1vw 0.3vh rgba(194, 194, 194, 0.5);
+}
+
+.esquerda .card {
+    margin-left: 1.7vw;
+    float: left;
+}
+
+.direita .card {
+    margin-right: 1.7vw;
+    float: right;
+}
+
+.
